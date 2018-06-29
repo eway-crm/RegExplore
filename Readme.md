@@ -11,5 +11,6 @@ We have converted it into a library so that we can have it as a part of our Soft
 * Removed settings
 * Possibility to open RegExplore on a specified path (JumpToKey)
 * Removed Hex editor because of additional reference to Be.Windows.Forms.HexBox.dll
+* Some GUI fixes
 
 ![](Home_Screenshot.png)

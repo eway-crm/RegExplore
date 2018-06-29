@@ -31,9 +31,17 @@
             this.txtData = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(9, 64);
+            // 
             // txtName
             // 
             this.txtName.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(9, 13);
             // 
             // btnCancel
             // 

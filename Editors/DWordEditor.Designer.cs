@@ -39,6 +39,10 @@
             // 
             this.txtName.TabIndex = 5;
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(9, 13);
+            // 
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(205, 149);
