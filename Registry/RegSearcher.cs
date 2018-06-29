@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using Microsoft.Win32;
 using System.Threading;
-using CrackSoft.RegExplore.Comparers;
+using RegExplore.Comparers;
 
-namespace CrackSoft.RegExplore.Registry
+namespace RegExplore.Registry
 {
     enum RegSearchLookAt
 	{
@@ -123,7 +123,7 @@ namespace CrackSoft.RegExplore.Registry
         RegSearchArgs searchArgs;        
         List<RegSearchMatch> matches;
         Queue<string> pendingKeys;
-        CrackSoft.RegExplore.Comparers.Comparer comparer;
+        RegExplore.Comparers.Comparer comparer;
 
         public RegSearcher()
         {

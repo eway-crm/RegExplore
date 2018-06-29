@@ -1,4 +1,4 @@
-﻿namespace CrackSoft.RegExplore
+﻿namespace RegExplore
 {
     partial class MainForm
     {
@@ -58,14 +58,11 @@
             this.addToFavoritesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeFavoriteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuSeperatorFavorites = new System.Windows.Forms.ToolStripSeparator();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.crackSoftWebsiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutRegExploreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbExplorer = new System.Windows.Forms.TabPage();
-            this.lstValues = new CrackSoft.UI.Controls.ListView2();
+            this.lstValues = new RegExplore.Controls.ListView2();
             this.chValName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chValType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chValData = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -73,7 +70,7 @@
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.tvwKeys = new System.Windows.Forms.TreeView();
             this.tbSearch = new System.Windows.Forms.TabPage();
-            this.lstResults = new CrackSoft.UI.Controls.ListView2();
+            this.lstResults = new RegExplore.Controls.ListView2();
             this.chKeyPath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chKeyValue = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chKeyData = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -100,6 +97,7 @@
             this.stringValuePopupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.binaryValuePopupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dWORDValuePopupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qWORDValuePopupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.multiStringValuePopupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.expandableStringPopupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.popupMenuSeparatorNew = new System.Windows.Forms.ToolStripSeparator();
@@ -113,7 +111,6 @@
             this.exportPopupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.popupMenuSeperatorCopyKeyName = new System.Windows.Forms.ToolStripSeparator();
             this.copyKeyNamePopupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.qWORDValuePopupMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -128,11 +125,10 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
-            this.favoritesToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.favoritesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(609, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(882, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -149,21 +145,21 @@
             // jumpToKeyToolStripMenuItem
             // 
             this.jumpToKeyToolStripMenuItem.Name = "jumpToKeyToolStripMenuItem";
-            this.jumpToKeyToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.jumpToKeyToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.jumpToKeyToolStripMenuItem.Text = "&Jump To Key...";
             this.jumpToKeyToolStripMenuItem.Click += new System.EventHandler(this.jumpToKeyToolStripMenuItem_Click);
             // 
             // exportToolStripMenuItem
             // 
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.exportToolStripMenuItem.Text = "&Export...";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -216,47 +212,47 @@
             // keyToolStripMenuItem
             // 
             this.keyToolStripMenuItem.Name = "keyToolStripMenuItem";
-            this.keyToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.keyToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.keyToolStripMenuItem.Text = "&Key";
             this.keyToolStripMenuItem.Click += new System.EventHandler(this.keyToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(197, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(196, 6);
             // 
             // stringValueToolStripMenuItem
             // 
             this.stringValueToolStripMenuItem.Name = "stringValueToolStripMenuItem";
-            this.stringValueToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.stringValueToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.stringValueToolStripMenuItem.Text = "&String Value";
             this.stringValueToolStripMenuItem.Click += new System.EventHandler(this.stringValueToolStripMenuItem_Click);
             // 
             // binaryValueToolStripMenuItem
             // 
             this.binaryValueToolStripMenuItem.Name = "binaryValueToolStripMenuItem";
-            this.binaryValueToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.binaryValueToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.binaryValueToolStripMenuItem.Text = "&Binary Value";
             this.binaryValueToolStripMenuItem.Click += new System.EventHandler(this.binaryValueToolStripMenuItem_Click);
             // 
             // dWORDValueToolStripMenuItem
             // 
             this.dWORDValueToolStripMenuItem.Name = "dWORDValueToolStripMenuItem";
-            this.dWORDValueToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.dWORDValueToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.dWORDValueToolStripMenuItem.Text = "&DWORD Value";
             this.dWORDValueToolStripMenuItem.Click += new System.EventHandler(this.dWORDValueToolStripMenuItem_Click);
             // 
             // multiStringValueToolStripMenuItem
             // 
             this.multiStringValueToolStripMenuItem.Name = "multiStringValueToolStripMenuItem";
-            this.multiStringValueToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.multiStringValueToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.multiStringValueToolStripMenuItem.Text = "&Multi-String Value";
             this.multiStringValueToolStripMenuItem.Click += new System.EventHandler(this.multiStringValueToolStripMenuItem_Click);
             // 
             // expandableStringValueToolStripMenuItem
             // 
             this.expandableStringValueToolStripMenuItem.Name = "expandableStringValueToolStripMenuItem";
-            this.expandableStringValueToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.expandableStringValueToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.expandableStringValueToolStripMenuItem.Text = "&Expandable String Value";
             this.expandableStringValueToolStripMenuItem.Click += new System.EventHandler(this.expandableStringValueToolStripMenuItem_Click);
             // 
@@ -343,36 +339,13 @@
             this.toolStripMenuSeperatorFavorites.Size = new System.Drawing.Size(159, 6);
             this.toolStripMenuSeperatorFavorites.Visible = false;
             // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.crackSoftWebsiteToolStripMenuItem,
-            this.aboutRegExploreToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
-            // 
-            // crackSoftWebsiteToolStripMenuItem
-            // 
-            this.crackSoftWebsiteToolStripMenuItem.Name = "crackSoftWebsiteToolStripMenuItem";
-            this.crackSoftWebsiteToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.crackSoftWebsiteToolStripMenuItem.Text = "CrackSoft &Website";
-            this.crackSoftWebsiteToolStripMenuItem.Click += new System.EventHandler(this.crackSoftWebsiteToolStripMenuItem_Click);
-            // 
-            // aboutRegExploreToolStripMenuItem
-            // 
-            this.aboutRegExploreToolStripMenuItem.Name = "aboutRegExploreToolStripMenuItem";
-            this.aboutRegExploreToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.aboutRegExploreToolStripMenuItem.Text = "&About Reg Explore";
-            this.aboutRegExploreToolStripMenuItem.Click += new System.EventHandler(this.aboutRegExploreToolStripMenuItem_Click);
-            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 384);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 550);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(609, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(882, 22);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -392,7 +365,7 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(609, 360);
+            this.tabControl1.Size = new System.Drawing.Size(882, 526);
             this.tabControl1.TabIndex = 5;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -404,7 +377,7 @@
             this.tbExplorer.Location = new System.Drawing.Point(4, 22);
             this.tbExplorer.Name = "tbExplorer";
             this.tbExplorer.Padding = new System.Windows.Forms.Padding(3);
-            this.tbExplorer.Size = new System.Drawing.Size(601, 334);
+            this.tbExplorer.Size = new System.Drawing.Size(874, 500);
             this.tbExplorer.TabIndex = 0;
             this.tbExplorer.Text = "Explore";
             this.tbExplorer.UseVisualStyleBackColor = true;
@@ -419,7 +392,7 @@
             this.lstValues.HideSelection = false;
             this.lstValues.Location = new System.Drawing.Point(233, 3);
             this.lstValues.Name = "lstValues";
-            this.lstValues.Size = new System.Drawing.Size(365, 328);
+            this.lstValues.Size = new System.Drawing.Size(638, 494);
             this.lstValues.SmallImageList = this.imlIcons;
             this.lstValues.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.lstValues.TabIndex = 1;
@@ -433,7 +406,7 @@
             // chValName
             // 
             this.chValName.Text = "Name";
-            this.chValName.Width = 120;
+            this.chValName.Width = 157;
             // 
             // chValType
             // 
@@ -443,7 +416,7 @@
             // chValData
             // 
             this.chValData.Text = "Data";
-            this.chValData.Width = 114;
+            this.chValData.Width = 326;
             // 
             // imlIcons
             // 
@@ -458,7 +431,7 @@
             // 
             this.splitter1.Location = new System.Drawing.Point(229, 3);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(4, 328);
+            this.splitter1.Size = new System.Drawing.Size(4, 494);
             this.splitter1.TabIndex = 16;
             this.splitter1.TabStop = false;
             // 
@@ -471,7 +444,7 @@
             this.tvwKeys.Location = new System.Drawing.Point(3, 3);
             this.tvwKeys.Name = "tvwKeys";
             this.tvwKeys.SelectedImageKey = "fold_open";
-            this.tvwKeys.Size = new System.Drawing.Size(226, 328);
+            this.tvwKeys.Size = new System.Drawing.Size(226, 494);
             this.tvwKeys.TabIndex = 0;
             this.tvwKeys.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tvwKeys_AfterLabelEdit);
             this.tvwKeys.BeforeExpand += new System.Windows.Forms.TreeViewCancelEventHandler(this.tvwKeys_BeforeExpand);
@@ -700,7 +673,7 @@
             this.popupMenuSeperatorCopyKeyName,
             this.copyKeyNamePopupMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(160, 254);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(160, 232);
             // 
             // modifyPopupMenuItem
             // 
@@ -733,47 +706,54 @@
             // keyPopupMenuItem
             // 
             this.keyPopupMenuItem.Name = "keyPopupMenuItem";
-            this.keyPopupMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.keyPopupMenuItem.Size = new System.Drawing.Size(199, 22);
             this.keyPopupMenuItem.Text = "&Key";
             this.keyPopupMenuItem.Click += new System.EventHandler(this.keyToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(197, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(196, 6);
             // 
             // stringValuePopupMenuItem
             // 
             this.stringValuePopupMenuItem.Name = "stringValuePopupMenuItem";
-            this.stringValuePopupMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.stringValuePopupMenuItem.Size = new System.Drawing.Size(199, 22);
             this.stringValuePopupMenuItem.Text = "&String Value";
             this.stringValuePopupMenuItem.Click += new System.EventHandler(this.stringValueToolStripMenuItem_Click);
             // 
             // binaryValuePopupMenuItem
             // 
             this.binaryValuePopupMenuItem.Name = "binaryValuePopupMenuItem";
-            this.binaryValuePopupMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.binaryValuePopupMenuItem.Size = new System.Drawing.Size(199, 22);
             this.binaryValuePopupMenuItem.Text = "&Binary Value";
             this.binaryValuePopupMenuItem.Click += new System.EventHandler(this.binaryValueToolStripMenuItem_Click);
             // 
             // dWORDValuePopupMenuItem
             // 
             this.dWORDValuePopupMenuItem.Name = "dWORDValuePopupMenuItem";
-            this.dWORDValuePopupMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.dWORDValuePopupMenuItem.Size = new System.Drawing.Size(199, 22);
             this.dWORDValuePopupMenuItem.Text = "&DWORD Value";
             this.dWORDValuePopupMenuItem.Click += new System.EventHandler(this.dWORDValueToolStripMenuItem_Click);
+            // 
+            // qWORDValuePopupMenuItem
+            // 
+            this.qWORDValuePopupMenuItem.Name = "qWORDValuePopupMenuItem";
+            this.qWORDValuePopupMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.qWORDValuePopupMenuItem.Text = "&QWORD Value";
+            this.qWORDValuePopupMenuItem.Click += new System.EventHandler(this.qWORDValuePopupMenuItem_Click);
             // 
             // multiStringValuePopupMenuItem
             // 
             this.multiStringValuePopupMenuItem.Name = "multiStringValuePopupMenuItem";
-            this.multiStringValuePopupMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.multiStringValuePopupMenuItem.Size = new System.Drawing.Size(199, 22);
             this.multiStringValuePopupMenuItem.Text = "&Multi-String Value";
             this.multiStringValuePopupMenuItem.Click += new System.EventHandler(this.multiStringValueToolStripMenuItem_Click);
             // 
             // expandableStringPopupMenuItem
             // 
             this.expandableStringPopupMenuItem.Name = "expandableStringPopupMenuItem";
-            this.expandableStringPopupMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.expandableStringPopupMenuItem.Size = new System.Drawing.Size(199, 22);
             this.expandableStringPopupMenuItem.Text = "&Expandable String Value";
             this.expandableStringPopupMenuItem.Click += new System.EventHandler(this.expandableStringValueToolStripMenuItem_Click);
             // 
@@ -847,18 +827,11 @@
             this.copyKeyNamePopupMenuItem.Text = "&Copy Key Name";
             this.copyKeyNamePopupMenuItem.Click += new System.EventHandler(this.copyKeyNameToolStripMenuItem_Click);
             // 
-            // qWORDValuePopupMenuItem
-            // 
-            this.qWORDValuePopupMenuItem.Name = "qWORDValuePopupMenuItem";
-            this.qWORDValuePopupMenuItem.Size = new System.Drawing.Size(200, 22);
-            this.qWORDValuePopupMenuItem.Text = "&QWORD Value";
-            this.qWORDValuePopupMenuItem.Click += new System.EventHandler(this.qWORDValuePopupMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 406);
+            this.ClientSize = new System.Drawing.Size(882, 572);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -893,12 +866,11 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tbExplorer;
-        private CrackSoft.UI.Controls.ListView2 lstValues;
+        private RegExplore.Controls.ListView2 lstValues;
         private System.Windows.Forms.ColumnHeader chValName;
         private System.Windows.Forms.ColumnHeader chValType;
         private System.Windows.Forms.ColumnHeader chValData;
@@ -916,11 +888,10 @@
         private System.Windows.Forms.CheckBox chkLookAtKeys;
         private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.TextBox txtPattern;
-        private CrackSoft.UI.Controls.ListView2 lstResults;
+        private RegExplore.Controls.ListView2 lstResults;
         private System.Windows.Forms.ColumnHeader chKeyPath;
         private System.Windows.Forms.ColumnHeader chKeyValue;
         private System.Windows.Forms.ColumnHeader chKeyData;
-        private System.Windows.Forms.ToolStripMenuItem aboutRegExploreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem renameToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuSeperatorCopy;
@@ -946,7 +917,6 @@
         private System.Windows.Forms.ToolStripMenuItem jumpToKeyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportPopupMenuItem;
         private System.Windows.Forms.ToolStripSeparator popupMenuSeperatorCopyKeyName;
-        private System.Windows.Forms.ToolStripMenuItem crackSoftWebsiteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifyPopupMenuItem;
         private System.Windows.Forms.ToolStripSeparator popupMenuSeperatorModify;
         private System.Windows.Forms.ToolStripMenuItem modifyToolStripMenuItem;

@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace CrackSoft.RegExplore
+namespace RegExplore
 {
     static class UIUtility
     {

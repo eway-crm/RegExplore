@@ -3,7 +3,7 @@ using System.IO;
 using Microsoft.Win32;
 using System.Text;
 
-namespace CrackSoft.RegExplore.Export
+namespace RegExplore.Export
 {
     class NativeExportProvider: ExportProvider
     {

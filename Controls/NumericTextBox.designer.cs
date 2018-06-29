@@ -1,4 +1,4 @@
-﻿namespace CrackSoft.UI.Controls
+﻿namespace RegExplore.Controls
 {
     partial class NumericTextBox
     {

@@ -1,4 +1,4 @@
-﻿namespace CrackSoft.RegExplore
+﻿namespace RegExplore.Dialogs
 {
     partial class JumpToKeyDialog
     {

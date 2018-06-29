@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.Win32;
 
-namespace CrackSoft.RegExplore.Registry
+namespace RegExplore.Registry
 {
     static class RegExplorer
     {

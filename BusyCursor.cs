@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace CrackSoft.RegExplore
+namespace RegExplore
 {
     class BusyCursor: IDisposable
     {

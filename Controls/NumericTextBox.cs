@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Text;
 
-namespace CrackSoft.UI.Controls
+namespace RegExplore.Controls
 {
     partial class NumericTextBox : TextBox
     {

@@ -1,9 +1,9 @@
 ﻿using System.IO;
 using System.Xml;
 using Microsoft.Win32;
-using CrackSoft.RegExplore.Registry;
+using RegExplore.Registry;
 
-namespace CrackSoft.RegExplore.Export
+namespace RegExplore.Export
 {
     class XmlExportProvider: ExportProvider
     {

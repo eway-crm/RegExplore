@@ -1,7 +1,7 @@
 ﻿using Microsoft.Win32;
 using System.IO;
 
-namespace CrackSoft.RegExplore.Export
+namespace RegExplore.Export
 {
     enum RegExportFormat
     {

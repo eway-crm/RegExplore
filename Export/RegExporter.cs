@@ -1,7 +1,7 @@
 ﻿using System.IO;
-using CrackSoft.RegExplore.Registry;
+using RegExplore.Registry;
 
-namespace CrackSoft.RegExplore.Export
+namespace RegExplore.Export
 {
     class RegExporter
     {        

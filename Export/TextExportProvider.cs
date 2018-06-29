@@ -1,9 +1,9 @@
 ﻿using System.IO;
-using CrackSoft.RegExplore.Registry;
+using RegExplore.Registry;
 using Microsoft.Win32;
 using System.Collections.Generic;
 
-namespace CrackSoft.RegExplore.Export
+namespace RegExplore.Export
 {
     class TextExportProvider: ExportProvider
     {

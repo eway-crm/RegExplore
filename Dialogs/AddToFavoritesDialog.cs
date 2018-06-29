@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CrackSoft.RegExplore
+namespace RegExplore.Dialogs
 {
     partial class AddToFavoritesDialog : Form
     {

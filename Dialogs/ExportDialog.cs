@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using CrackSoft.RegExplore.Export;
-using CrackSoft.RegExplore.Registry;
+using RegExplore.Export;
+using RegExplore.Registry;
 using System.IO;
 
-namespace CrackSoft.RegExplore
+namespace RegExplore.Dialogs
 {
     partial class ExportDialog : Form
     {

@@ -1,8 +1,8 @@
 ﻿using System.Windows.Forms;
-using CrackSoft.RegExplore.Registry;
+using RegExplore.Registry;
 using Microsoft.Win32;
 
-namespace CrackSoft.RegExplore.Editors
+namespace RegExplore.Editors
 {    
     partial class ValueEditor : Form
     {

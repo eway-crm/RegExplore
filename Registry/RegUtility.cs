@@ -3,7 +3,7 @@ using Microsoft.Win32;
 using System.Collections.Generic;
 using System.Collections;
 
-namespace CrackSoft.RegExplore.Registry
+namespace RegExplore.Registry
 {
     static class RegUtility
     {

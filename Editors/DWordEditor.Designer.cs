@@ -1,4 +1,4 @@
-﻿namespace CrackSoft.RegExplore.Editors
+﻿namespace RegExplore.Editors
 {
     partial class DWordEditor
     {
@@ -31,7 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdoDecimal = new System.Windows.Forms.RadioButton();
             this.rdoHex = new System.Windows.Forms.RadioButton();
-            this.txtData = new CrackSoft.UI.Controls.NumericTextBox();
+            this.txtData = new RegExplore.Controls.NumericTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,6 +126,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdoDecimal;
         private System.Windows.Forms.RadioButton rdoHex;
-        private CrackSoft.UI.Controls.NumericTextBox txtData;
+        private RegExplore.Controls.NumericTextBox txtData;
     }
 }

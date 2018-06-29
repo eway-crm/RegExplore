@@ -6,9 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using CrackSoft.RegExplore.Registry;
+using RegExplore.Registry;
 
-namespace CrackSoft.RegExplore.Editors
+namespace RegExplore.Editors
 {
     partial class MultiStringEditor : ValueEditor
     {

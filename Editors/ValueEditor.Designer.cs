@@ -1,4 +1,4 @@
-﻿namespace CrackSoft.RegExplore.Editors
+﻿namespace RegExplore.Editors
 {
     partial class ValueEditor
     {

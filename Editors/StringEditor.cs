@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Microsoft.Win32;
-using CrackSoft.RegExplore.Registry;
+using RegExplore.Registry;
 
-namespace CrackSoft.RegExplore.Editors
+namespace RegExplore.Editors
 {
     partial class StringEditor : ValueEditor
     {

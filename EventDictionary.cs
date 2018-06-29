@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CrackSoft.Collections
+namespace RegExplore
 {
     class ItemEventArgs<TKey, TValue>: EventArgs
     {

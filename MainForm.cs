@@ -2,23 +2,21 @@
 using System.Linq;
 using System.Windows.Forms;
 using Microsoft.Win32;
-using CrackSoft.RegExplore.Registry;
+using RegExplore.Registry;
 using System.IO;
 using System.Diagnostics;
 using System.Text;
-using CrackSoft.Utility;
 using System.Collections.Generic;
-using CrackSoft.RegExplore.Editors;
-using CrackSoft.Collections;
+using RegExplore.Editors;
+using RegExplore.Dialogs;
 
-namespace CrackSoft.RegExplore
+namespace RegExplore
 {
-    partial class MainForm : Form
+    public partial class MainForm : Form
     {
         RegSearcher searcher;
         DateTime searchStartTime;
         bool searchStarted;
-        Properties.Settings settings;
         EventDictionary<string, string> favorites;
         
         public MainForm()
@@ -50,12 +48,8 @@ namespace CrackSoft.RegExplore
         
         private void MainForm_Load(object sender, EventArgs e)
         {
-            settings = Properties.Settings.Default;
-            LoadSettings();
             AddRootKeys();
             LoadFavorites();
-            if (settings.LastKey != String.Empty)
-                JumpToKey(settings.LastKey);
 
             if (!Environment.Is64BitProcess)
                 qWORDValuePopupMenuItem.Visible = false;
@@ -371,11 +365,6 @@ namespace CrackSoft.RegExplore
             }
             else
                 toolStripStatusLabel1.Text = String.Empty;
-        }
-
-        private void aboutRegExploreToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            (new AboutBox()).ShowDialog(this);
         }
 
         private void findToolStripMenuItem_Click(object sender, EventArgs e)
@@ -714,7 +703,6 @@ namespace CrackSoft.RegExplore
         {
             if (searcher != null)
                 searcher.Stop();
-            SaveSettings();
         }
 
         private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
@@ -734,57 +722,6 @@ namespace CrackSoft.RegExplore
                 tvwKeys.SelectedNode.Collapse();
             else
                 tvwKeys.SelectedNode.Expand();
-        }
-
-        private void LoadSettings()
-        {
-            if (settings.Location.X != -1)
-                this.Location = settings.Location;
-            this.Size = settings.Size;
-            
-            chkLookAtKeys.Checked = settings.LookAtKeys;
-            chkLookAtValues.Checked = settings.LookAtValues;
-            chkLookAtData.Checked = settings.LookAtData;
-            chkMatchCase.Checked = settings.MatchCase;
-            chkUseRegex.Checked = settings.UseRegEx;
-            cmbSearch.SelectedItem = settings.SearchHive.Clone();
-            lstValues.Columns[0].Width = settings.ValWidth1;
-            lstValues.Columns[1].Width = settings.ValWidth2;
-            lstValues.Columns[2].Width = settings.ValWidth3;
-            lstResults.Columns[0].Width = settings.ResWidth1;
-            lstResults.Columns[1].Width = settings.ResWidth2;
-            lstResults.Columns[2].Width = settings.ResWidth3;
-
-            if (settings.Maximized)
-                this.WindowState = FormWindowState.Maximized;
-        }
-
-        private void SaveSettings()
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                settings.Maximized = false;
-                settings.Size = this.Size;
-                settings.Location = this.Location;
-            }
-            else
-                settings.Maximized = true;
-
-            settings.LookAtKeys = chkLookAtKeys.Checked;
-            settings.LookAtValues = chkLookAtValues.Checked;
-            settings.LookAtData = chkLookAtData.Checked;
-            settings.MatchCase = chkMatchCase.Checked;
-            settings.UseRegEx = chkUseRegex.Checked;
-            settings.SearchHive = cmbSearch.SelectedItem.ToString();
-            settings.ValWidth1 = lstValues.Columns[0].Width;
-            settings.ValWidth2 = lstValues.Columns[1].Width;
-            settings.ValWidth3 = lstValues.Columns[2].Width;
-            settings.ResWidth1 = lstResults.Columns[0].Width;
-            settings.ResWidth2 = lstResults.Columns[1].Width;
-            settings.ResWidth3 = lstResults.Columns[2].Width;
-            if (tvwKeys.SelectedNode != null)
-                settings.LastKey = tvwKeys.SelectedNode.Name;
-            settings.Save();
         }
 
         private void lstResults_DoubleClick(object sender, EventArgs e)
@@ -808,8 +745,11 @@ namespace CrackSoft.RegExplore
             }
         }
 
-        private bool JumpToKey(string key)
+        public bool JumpToKey(string key)
         {
+            if (string.IsNullOrEmpty(nameof(key)))
+                throw new ArgumentNullException(nameof(key));
+
             tabControl1.SelectedTab = tbExplorer;
             string[] tokens = key.Split('\\');
             TreeNode node = tvwKeys.Nodes[tokens[0]];
@@ -864,9 +804,6 @@ namespace CrackSoft.RegExplore
 
                     switch (value.Kind)
                     {
-                        case RegistryValueKind.Binary:
-                            editor = new BinaryEditor(value);
-                            break;                        
                         case RegistryValueKind.MultiString:
                             editor = new MultiStringEditor(value);
                             break;
@@ -915,11 +852,6 @@ namespace CrackSoft.RegExplore
             ExportDialog dialog = new ExportDialog();
             dialog.cmbBranch.Text = key;
             dialog.ShowDialog(this);
-        }
-
-        private void crackSoftWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ShellUtility.OpenWebPage("http://www.cracksoft.net");
         }
 
         private void lstValues_DoubleClick(object sender, EventArgs e)

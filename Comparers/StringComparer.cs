@@ -1,5 +1,5 @@
 ﻿
-namespace CrackSoft.RegExplore.Comparers
+namespace RegExplore.Comparers
 {
     class StringComparer: Comparer
     {

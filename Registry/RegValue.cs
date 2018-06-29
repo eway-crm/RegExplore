@@ -2,7 +2,7 @@
 using Microsoft.Win32;
 using System.Text;
 
-namespace CrackSoft.RegExplore.Registry
+namespace RegExplore.Registry
 {
     class RegValue : IComparable<RegValue>
     {

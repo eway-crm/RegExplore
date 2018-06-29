@@ -2,7 +2,7 @@
 using System.Linq;
 using Microsoft.Win32;
 
-namespace CrackSoft.RegExplore.Registry
+namespace RegExplore.Registry
 {
     class RegKey : IComparable<RegKey>
     {

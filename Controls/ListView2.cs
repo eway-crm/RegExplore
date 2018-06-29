@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 using System.Reflection;
 
-namespace CrackSoft.UI.Controls
+namespace RegExplore.Controls
 {    
     class ListView2 : ListView
     {
