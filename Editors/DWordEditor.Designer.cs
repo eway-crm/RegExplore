@@ -39,10 +39,6 @@
             // 
             this.txtName.TabIndex = 5;
             // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(9, 13);
-            // 
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(205, 149);
@@ -68,10 +64,12 @@
             // rdoDecimal
             // 
             this.rdoDecimal.AutoSize = true;
+            this.rdoDecimal.Checked = true;
             this.rdoDecimal.Location = new System.Drawing.Point(11, 42);
             this.rdoDecimal.Name = "rdoDecimal";
             this.rdoDecimal.Size = new System.Drawing.Size(63, 17);
             this.rdoDecimal.TabIndex = 2;
+            this.rdoDecimal.TabStop = true;
             this.rdoDecimal.Text = "&Decimal";
             this.rdoDecimal.UseVisualStyleBackColor = true;
             this.rdoDecimal.CheckedChanged += new System.EventHandler(this.base_CheckedChanged);
@@ -79,12 +77,10 @@
             // rdoHex
             // 
             this.rdoHex.AutoSize = true;
-            this.rdoHex.Checked = true;
             this.rdoHex.Location = new System.Drawing.Point(11, 19);
             this.rdoHex.Name = "rdoHex";
             this.rdoHex.Size = new System.Drawing.Size(86, 17);
             this.rdoHex.TabIndex = 1;
-            this.rdoHex.TabStop = true;
             this.rdoHex.Text = "&Hexadecimal";
             this.rdoHex.UseVisualStyleBackColor = true;
             this.rdoHex.CheckedChanged += new System.EventHandler(this.base_CheckedChanged);
@@ -94,7 +90,7 @@
             this.txtData.AllowDecimal = false;
             this.txtData.AllowGrouping = false;
             this.txtData.AllowNegative = false;
-            this.txtData.HexNumber = true;
+            this.txtData.HexNumber = false;
             this.txtData.Location = new System.Drawing.Point(12, 84);
             this.txtData.MaxLength = 8;
             this.txtData.Name = "txtData";

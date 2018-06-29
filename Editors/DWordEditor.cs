@@ -17,9 +17,11 @@ namespace RegExplore.Editors
             InitializeComponent();
             string data;
             if (value.Kind == Microsoft.Win32.RegistryValueKind.DWord)
-                data = ((int)value.Data).ToString("x");
+                data = ((int)value.Data).ToString();
             else
-                data = ((long)value.Data).ToString("x");
+                data = ((long)value.Data).ToString();
+
+            this.txtData.Text = data;
         }
 
         private void base_CheckedChanged(object sender, EventArgs e)
